@@ -28,9 +28,15 @@
 }
 
 *{
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+
+body{
+  background: var(--backbody);
+  padding-bottom: 100px;
 }
 
 header{
@@ -71,14 +77,16 @@ header{
   width: 100%;
   height: 40px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start ;
   align-items: center;
   text-align: center;
+  padding: 10px;
 }
 
 .icon-search{
   height: 15px;
   width: 15px;
+  margin-right: 10px;
 }
 
 .procurar{
@@ -100,23 +108,23 @@ header{
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background: var(--backbody);
   height: 100vh;
 }
 
 .post{
   height: auto;
-  padding: 10px;
-  width: 55%;
+  padding: 15px;
+  width: 60%;
   background: var(--white);
   border-radius: 5px;
+  margin-bottom: 15px;
 }
 
 .data{
   display: unset;
   font-family: var(--lexenda);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   color: var(--text);
   white-space: nowrap;
 }
@@ -125,8 +133,24 @@ header{
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   flex-wrap: nowrap;
+}
+
+.titlepost{
+  font-family: var(--lexenda);
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: var(--title);
+}
+
+.contpost{
+  font-family: var(--lexenda);
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--text);
+  line-height: 20px;
 }
 
 .like{
