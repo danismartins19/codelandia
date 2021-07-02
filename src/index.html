@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Daniel Martins</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c23ccaaf7d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -16,8 +17,8 @@
             </div>
 
             <div class="search">
-                <img src="assets/search.svg" alt="Procurar" class="icon-search">
-                <input type="text" class="procurar" name="" id="" placeholder="Pesquisar no blog">
+                <img src="../assets/search.svg" alt="Procurar" class="icon-search">
+                <input type="text" class="procurar" name="" id="searchbar" placeholder="Pesquisar no blog">
             </div>
         </div>
     </header>
@@ -28,7 +29,7 @@
         <article class="post">
             <div class="headpost">
                 <span class="data">02 de jul, 2023</span>
-                <img src="./assets/heart.svg" alt="Curtir" class="like">
+                <i class="js-like far fa-heart"></i>
             </div>
 
             <div class="titlepost">
@@ -47,7 +48,7 @@
         <article class="post">
             <div class="headpost">
                 <span class="data">02 de jul, 2023</span>
-                <img src="./assets/heart.svg" alt="Curtir" class="like">
+                <i class="js-like far fa-heart"></i>
             </div>
 
             <div class="titlepost">
@@ -66,11 +67,11 @@
         <article class="post">
             <div class="headpost">
                 <span class="data">02 de jul, 2023</span>
-                <img src="./assets/heart.svg" alt="Curtir" class="like">
+                <i class="js-like far fa-heart"></i>
             </div>
 
             <div class="titlepost">
-                Tem Firefox novo no pedaço e você vai querer migrar
+                Tem Firefox novo vindo no pedaço e você vai querer migrar
             </div>
 
             <div class="contpost">
@@ -84,7 +85,7 @@
         <article class="post">
             <div class="headpost">
                 <span class="data">02 de jul, 2023</span>
-                <img src="./assets/heart.svg" alt="Curtir" class="like">
+                <i class="js-like far fa-heart"></i>
             </div>
 
             <div class="titlepost">
@@ -104,6 +105,20 @@
 
 
 
+<script src="./script.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+    const sr = ScrollReveal({
+        origin: 'top',
+        distance: '50px',
+        duration: 2000,
+        reset: true
+    });
 
+    ScrollReveal().reveal('.post', { delay: 200 });
+    ScrollReveal().reveal('.date', { delay: 400 });
+    ScrollReveal().reveal('.titlepost', { delay: 500 });
+    ScrollReveal().reveal('.contpost', { delay: 600 });
+</script>
 </body>
 </html>
